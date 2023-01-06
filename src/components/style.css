@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding:0;
+    overflow-x: hidden;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:5px 40px;
+}
+.navbar>h1{
+    font-family: 'Pacifico', cursive;
+    display: inline;
+    background: linear-gradient(90deg,#911bf1,#f6ab3b,#ee0fab 101.12%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.back-upper{
+    background: url('./images/upper-back.jpg');
+    background-size: cover;
+    
+    width:100vw;
+    height:90vh;
+    filter: brightness(0.3);
+}
+.calender{
+    position: absolute;
+    top:250px;
+    display: flex;
+    width:100vw;
+    justify-content: center;
+}
+.calender>div{
+    display: flex;
+    align-items: self-start;
+    justify-content: center;
+}
+
+.checkIn{
+    display: flex;
+    align-items: center;
+    width:100px;
+    padding:10px 20px;
+    background-color: white;
+    justify-content: space-between;
+}
+
+.checkin-border{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.children{
+    background-color: white;
+    padding:10px 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.arrow{
+    padding-left: 10px;
+    cursor: pointer;
+}
+.flex-align-justify{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.max-size{
+    font-size: 10px;
+    color:gray;
+}
+.max-part>div{
+    padding: 3px 0;
+}
+
+.done{
+    border: 2px solid blue;
+    width: 120px;
+    font-size: 14px;
+    margin: auto;
+    padding: 0 !important;
+    color:blue;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.done:hover{
+    background-color: blue;
+    color:white;
+    cursor:pointer;
+    transition: 0.5s;
+}
+
+.incre-dcre{
+    display: flex;
+    width: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 550px) {
+    .navbar{
+        display: block;
+    }
+    .navbar>p{
+        margin-top: 10px;
+    }
+    .calender{
+        flex-direction: column;
+        font-size: 11px;
+    }
+    .check-avail{
+        margin-top: 10px;
+    }
+    .checkIn{
+        width:70px;
+        padding:5px 10px;
+    }
+    .children{
+        padding:5px 10px;
+    }
+    .done{
+        font-size: 11px;
+        width:70px;
+    }
+    
+}
+
+
